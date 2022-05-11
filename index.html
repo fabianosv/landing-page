@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <section class="sec">
+        <!--Início Section-->
+
+        <header>
+            <!---Início Header-->
+            <a href="index.html"><img src="imagens/logo.png" alt="" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Information</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <!--Fim Header-->
+
+        <div class="content">
+            <!---Início Content-->
+            <div class="textbox">
+                <!---Início TextBox-->
+                <h2>That's what, <br><span>I LIKE</span></h2>
+                <p>Originalmente, a fórmula da Pepsi foi criada para fins medicinais. Mas seu sabor agradou tanto que o xarope começou a ser consumido simplesmente por prazer. Cinco anos mais tarde, a fórmula transformou-se em bebida e começou a ser comercializada. Hoje, a Pepsi é um refrigerante de cola com aroma natural, muito apreciado pelo sabor suave e pela refrescância.</p>
+                    <br>
+                <a href="">View All Products</a>
+            </div>
+            <!---Fim TextBox-->
+            <div class="imgbox">
+                <!---Início ImgBox-->
+                <img src="imagens/pepsi001.png" alt="" class="pepsi">
+            </div>
+            <!----Fim ImgBox-->
+        </div>
+        <!---Fim Content-->
+        <ul class="thumb">
+            <!--Início Thumb-->
+            <li><img src="imagens/pepsi001.png" onclick="imgSlider('imagens/pepsi001.png');changeBgcolor('#0062be')" alt=""></li>
+            <li><img src="imagens/pepsi002.png" onclick="imgSlider('imagens/pepsi002.png');changeBgcolor('#e60c2c')" alt=""></li>
+            <li><img src="imagens/pepsi003.png" onclick="imgSlider('imagens/pepsi003.png');changeBgcolor('#1e1e1e')" alt=""></li>
+        </ul>
+        <!----Fim Thumb-->
+
+        <ul class="sci">
+            <!---Início SCI-->
+            <li><a href="#"><img src="imagens/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="imagens/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="imagens/instagram.png" alt=""></a></li>
+        </ul>
+        <!---Fim SCI-->
+
+        <script> /*Início Função*/
+            function imgSlider(anything){
+                document.querySelector('.pepsi').src = anything
+            }
+            function changeBgcolor(color){
+                const sec = document.querySelector('.sec');
+                sec.style.background = color
+            }
+        </script> 
+
+    </section>
+    <!--Fim Section-->
+    <footer class="footer">
+        <p>&copy PEPSI Todos os direitos reservados</p>
+    </footer>
+</body>
+
+
+</html>
