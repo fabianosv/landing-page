@@ -161,19 +161,3 @@ header ul li a:hover {
 .sci li:hover {
     color: #00be19;
 }
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    background-color: rgb(186, 149, 30);
-    color: #FFF;
-    width: 100%;
-    height: 100px;	
-    text-align: center;
-    line-height: 100px;
-}
-body{
-    position: relative;
-    height: 100%;
-
-}
